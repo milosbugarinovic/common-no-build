@@ -1,0 +1,14 @@
+{
+	"delay": 1000,
+	"ignore": [
+		"./dist/lib/typeorm/migration"
+	],
+	"legacyWatch": true,
+	"pollingInterval": 2500,
+	"verbose": false,
+	"watch": [
+		"./dist",
+		"../node-common/dist",
+		"../common/dist"
+	]
+}

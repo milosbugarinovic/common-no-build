@@ -1,0 +1,65 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"alwaysStrict": true,
+		"baseUrl": "..",
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"lib": [
+			"esnext"
+		],
+		"module": "CommonJS",
+		"moduleResolution": "NodeNext",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "./dist",
+		"paths": {
+			"#": [
+				"./node-core/src/index.ts"
+			],
+			"#/*": [
+				"./node-core/src/*"
+			],
+			"#common": [
+				"./common/src/index.ts"
+			],
+			"#common/*": [
+				"./common/src/*"
+			],
+			"#node-common": [
+				"./node-common/src/index.ts"
+			],
+			"#node-common/*": [
+				"./node-common/src/*"
+			]
+		},
+		"resolveJsonModule": true,
+		"rootDir": "..",
+		"skipLibCheck": true,
+		"strict": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"target": "ESNext"
+	},
+	"exclude": [
+		"./**/*.test.ts",
+		"./**/__mocks__/*",
+		"./**/__snapshots__/*"
+	],
+	"include": [
+		"./src",
+		"../common/src",
+		"../node-common/src"
+	]
+}
