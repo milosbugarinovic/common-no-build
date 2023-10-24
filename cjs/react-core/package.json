@@ -49,7 +49,8 @@
     "start": "craco start",
     "test": "craco test",
     "tsc:check": "tsc --noEmit",
-    "init": "mkdir -p ./src/_shared/common && mkdir -p ./src/_shared/node-common && ln -s ../../../../common/src ./src/_shared/common/src && ln -s ../../../../node-common/src ./src/_shared/node-common/src"
+    "init": "mkdir -p ./src/_shared/common && mkdir -p ./src/_shared/node-common && ln -s ../../../../common/src ./src/_shared/common/src && ln -s ../../../../node-common/src ./src/_shared/node-common/src",
+    "init:service-test": "ln -s ../../../common/src/service/some-service.ts ./src/service/index-service.ts"
   },
   "version": "1.0.0"
 }
