@@ -1,4 +1,5 @@
 import { CommonSomeService } from '#common/service/some-service'
+// import { CommonSomeService } from '#common/service/some-service'
 
 export class Common {
 	protected _commonServiceTest = new CommonSomeService()

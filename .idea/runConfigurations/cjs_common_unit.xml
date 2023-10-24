@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="cjs:common:unit" type="JavaScriptTestRunnerJest">
+    <config-file value="$PROJECT_DIR$/cjs/common/jest.config.unit.js" />
+    <node-interpreter value="project" />
+    <node-options value="--experimental-vm-modules" />
+    <jest-package value="$PROJECT_DIR$/cjs/common/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$/cjs/common" />
+    <envs>
+      <env name="TZ" value="utc" />
+    </envs>
+    <scope-kind value="ALL" />
+    <method v="2" />
+  </configuration>
+</component>

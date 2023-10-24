@@ -9,9 +9,11 @@ module.exports = {
 	transform: {},
 	preset: 'ts-jest/presets/default-esm',
 	moduleNameMapper: {
-		'^src\\/(.*)': '<rootDir>/src/$1.ts',
+		'^#common$': '<rootDir>/src/index.ts',
+		'^#common\\/(.*)': '<rootDir>/src/$1.ts',
 	},
 	roots: ['<rootDir>/src'],
 	extensionsToTreatAsEsm: ['.ts'],
 	testPathIgnorePatterns: ['/node_modules/'],
+	// setupFiles: ['<rootDir>/index-test-setup.ts'],
 }
