@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run rw-start --workspace=react-core",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @jibin/app run build"
+  },
+  "devDependencies": {
+  }
+}

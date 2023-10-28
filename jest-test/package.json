@@ -1,0 +1,24 @@
+{
+  "name": "@mb/jest-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jest": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:e2e": "TZ=utc npm run jest -- --config=./test/jest.config.js",
+    "test:int": "TZ=utc npm run jest -- --config=./jest.config.int.js",
+    "test:unit": "TZ=utc npm run jest -- --config=./jest.config.unit.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.7.0",
+    "@types/jest": "29.5.6",
+    "jest-extended": "4.0.2",
+    "ts-jest": "29.1.1",
+    "ts-node": "10.9.1",
+    "@types/node": "20.8.9",
+    "typescript": "5.2.2"
+  }
+}
