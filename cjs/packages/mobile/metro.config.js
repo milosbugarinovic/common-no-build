@@ -4,8 +4,8 @@ const path = require('path');
 // const moduleRoot = path.resolve(__dirname, '../..');
 
 const projectRoot = __dirname;
-const commonRoot = path.resolve(projectRoot, '../common');
-console.log('#######################', {commonRoot, __dirname, '#common': path.resolve(commonRoot, 'src')}) // eslint-disable-line no-console
+const commonRoot = path.resolve(projectRoot, '../common/src');
+console.log('#######################', {commonRoot, __dirname}) // eslint-disable-line no-console
 
 module.exports = {
   watchFolders: [projectRoot, commonRoot],

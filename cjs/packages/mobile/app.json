@@ -1,8 +1,5 @@
 {
   "expo": {
-    "experiments": {
-      "tsconfigPaths": false
-    },
     "name": "mobile",
     "slug": "mobile",
     "version": "1.0.0",

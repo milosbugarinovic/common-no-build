@@ -17,10 +17,10 @@
 //        "../src/app/*"
 //      ],
       "@test/common": [
-        "../common"
+        "../common/src"
       ],
       "@test/common/*": [
-        "../common/*"
+        "../common/src/*"
       ]
     }
   }
