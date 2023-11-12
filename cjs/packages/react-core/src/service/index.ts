@@ -1,9 +1,9 @@
 
-export class Common {
+export class ReactService {
 
 	protected _someProperty: string = 'someProperty'
 
 	someFunction(): string {
-		return 'someFunction'
+		return 'reactService-someFunction'
 	}
 }

@@ -20,9 +20,9 @@
     "web-vitals": "2.1.2"
   },
   "devDependencies": {
-	"customize-cra": "1.0.0",
+    "customize-cra": "1.0.0",
     "react-app-rewired": "2.2.1",
-		"react-app-alias-ex": "2.1.0",
+    "react-app-alias-ex": "2.1.0",
     "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.3",
     "@testing-library/jest-dom": "5.12.0",
@@ -38,7 +38,7 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-import": "2.27.5",
     "husky": "8.0.3",
-		"typescript": "4.9.5"
+    "typescript": "4.9.5"
   },
   "name": "react-core",
   "private": true,
@@ -46,11 +46,11 @@
     "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
     "start": "GENERATE_SOURCEMAP=false react-app-rewired start",
     "test": "GENERATE_SOURCEMAP=false react-app-rewired test",
-    "tsc:check": "tsc --noEmit",
-		"tsc": "tsc -b ./tsconfig.json",
-		"tsc-check": "npm run tsc -- --noEmit",
-		"tsc-time": "npm run tsc -- --diagnostics",
-		"tsc-watch": "npm run tsc -- -w --preserveWatchOutput"
+    "test:unit": "jest",
+    "tsc": "tsc -b ./tsconfig.json",
+    "tsc-check": "npm run tsc -- --noEmit",
+    "tsc-time": "npm run tsc -- --diagnostics",
+    "tsc-watch": "npm run tsc -- -w --preserveWatchOutput"
   },
   "version": "1.0.0"
 }
