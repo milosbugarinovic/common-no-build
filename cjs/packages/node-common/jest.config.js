@@ -3,9 +3,15 @@ module.exports = {
 	preset: 'ts-jest',
 	testEnvironment: "node",
 	moduleNameMapper: {
-		'^@test/common/(.*)$': ['<rootDir>/../common/$1.ts','<rootDir>/../common/$1/index.ts'],
-		'^@test/node-common/(.*)$': ['<rootDir>/$1.ts','<rootDir>/$1/index.ts'],
+		'^#common$': ['<rootDir>/../common/src/$1/index'],
+		'^#common/(.*)$': ['<rootDir>/../common/src/$1','<rootDir>/../common/src/$1/index'],
+		'^#node-common$': ['<rootDir>/src/$1/index'],
+		'^#node-common/(.*)$': ['<rootDir>/src/$1','<rootDir>/src/$1/index'],
 	},
 	roots: ['<rootDir>'],
+
+
+	testMatch: ['<rootDir>/src/**/*.(spec|test).[jt]s?(x)'],
 	testPathIgnorePatterns: ['/node_modules/'],
+	setupFilesAfterEnv: ['jest-extended/all'],
 }

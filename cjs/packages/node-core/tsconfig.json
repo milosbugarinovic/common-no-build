@@ -3,7 +3,7 @@
 		"allowSyntheticDefaultImports": true,
 		"alwaysStrict": true,
 		"baseUrl": "..",
-		"composite": true,
+		"composite": false,
 		"declaration": true,
 		"declarationMap": true,
 		"emitDecoratorMetadata": true,
@@ -16,7 +16,7 @@
 			"esnext"
 		],
 		"module": "CommonJS",
-		"moduleResolution": "NodeNext",
+		"moduleResolution": "node",
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
@@ -25,14 +25,23 @@
 		"noUnusedParameters": true,
 		"outDir": "./dist",
 		"paths": {
+			"#": [
+				"./node-core/src"
+			],
 			"#/*": [
-				"./node-core/*"
+				"./node-core/src/*"
 			],
-			"@test/common/*": [
-				"./common/*"
+			"#common": [
+				"./common/src"
 			],
-			"@test/node-common/*": [
-				"./node-common/*"
+			"#common/*": [
+				"./common/src/*"
+			],
+			"#node-common": [
+				"./node-common/src"
+			],
+			"#node-common/*": [
+				"./node-common/src/*"
 			]
 		},
 		"resolveJsonModule": true,
@@ -43,14 +52,14 @@
 		"strictNullChecks": true,
 		"target": "ESNext"
 	},
-	"exclude": [
-		"./**/*.test.ts",
-		"./**/__mocks__/*",
-		"./**/__snapshots__/*"
-	],
 	"include": [
+		"./package.json",
 		"./src",
 		"../common/src",
 		"../node-common/src"
+	],
+	"references": [
+		{ "path": "../common/tsconfig.build.json" },
+		{ "path": "../node-common/tsconfig.build.json" }
 	]
 }

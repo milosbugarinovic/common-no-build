@@ -20,9 +20,9 @@
     "web-vitals": "2.1.2"
   },
   "devDependencies": {
-    "@craco/craco": "7.1.0",
+	"customize-cra": "1.0.0",
     "react-app-rewired": "2.2.1",
-    "customize-cra": "1.0.0",
+		"react-app-alias-ex": "2.1.0",
     "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.3",
     "@testing-library/jest-dom": "5.12.0",
@@ -38,25 +38,19 @@
     "eslint-config-prettier": "7.2.0",
     "eslint-plugin-import": "2.27.5",
     "husky": "8.0.3",
-    "typescript": "4.5.4"
+		"typescript": "4.9.5"
   },
   "name": "react-core",
   "private": true,
   "scripts": {
-    "react-build": "react-scripts build",
-    "react-start": "react-scripts start",
-    "react-test": "react-scripts test",
-
-    "rw-build": "react-app-rewired build",
-    "rw-start": "react-app-rewired start",
-    "rw-test": "react-app-rewired test",
-
-    "build": "craco build",
-    "start": "craco start",
-    "test": "craco test",
+    "build": "GENERATE_SOURCEMAP=false react-app-rewired build",
+    "start": "GENERATE_SOURCEMAP=false react-app-rewired start",
+    "test": "GENERATE_SOURCEMAP=false react-app-rewired test",
     "tsc:check": "tsc --noEmit",
-    "init": "mkdir -p ./src/_shared/common && mkdir -p ./src/_shared/node-common && ln -s ../../../../common/src ./src/_shared/common/src && ln -s ../../../../node-common/src ./src/_shared/node-common/src",
-    "init:service-test": "ln -s ../../../common/src/service/some-service.ts ./src/service/index-service.ts"
+		"tsc": "tsc -b ./tsconfig.json",
+		"tsc-check": "npm run tsc -- --noEmit",
+		"tsc-time": "npm run tsc -- --diagnostics",
+		"tsc-watch": "npm run tsc -- -w --preserveWatchOutput"
   },
   "version": "1.0.0"
 }

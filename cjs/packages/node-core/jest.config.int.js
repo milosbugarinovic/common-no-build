@@ -3,5 +3,5 @@ const sharedConfig = require('./jest.config')
 
 module.exports = {
 	...sharedConfig,
-	testMatch: ['**/__tests__/*.(spec|test).[jt]s?(x)'],
+	testMatch: ['<rootDir>/src/**/__tests__/*.(spec|test).[jt]s?(x)'],
 }

@@ -6,8 +6,9 @@
 	"keywords": [],
 	"author": "Milos Bugarinovic <milos.bugarinovic@gmail.com> (https://milos.bugarinovic.com)",
 	"main": "./src/index.ts",
+	"types": "src",
 	"scripts": {
-		"jest": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+		"jest": "npx jest",
 		"test": "concurrently -c auto 'npm:test:*'",
 		"test-coverage-unit": "npm run test:unit -- --coverage",
 		"test-coverage-unit-publish": "codecov",

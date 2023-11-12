@@ -1,4 +1,5 @@
 {
+	"extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
@@ -8,7 +9,7 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "esnext",
+		"module": "CommonJS",
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
@@ -16,25 +17,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5",
-    "paths": {
-      "@test/common/*": [
-        "../common/*"
-      ],
-      "@test/node-common/*": [
-        "../node-common/*"
-      ]
-    }
+		"target": "es5"
   },
-  "exclude": [
-    "./**/*.test.ts",
-    "./**/__mocks__/*",
-    "./**/__snapshots__/*",
-    "node_modules"
-  ],
   "include": [
-    "./src",
-    "../common/src",
-    "../node-common/src"
+		"./src"
   ]
 }

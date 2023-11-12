@@ -1,7 +1,7 @@
 import React from 'react'
-import { Common } from '@test/common/src'
-// import { Common } from 'src/service'
-// import { CommonSomeService } from 'src/service/index-service'
+import { Common } from '#common'
+// import { Common } from '#/service'
+// import { CommonSomeService } from '#/service/index-service'
 
 export const App = (): React.ReactElement => {
 

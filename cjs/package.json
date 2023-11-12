@@ -6,7 +6,13 @@
   ],
   "scripts": {
     "start": "npm run rw-start --workspace=react-core",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @jibin/app run build"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @jibin/app run build",
+    "tsc": "tsc -b ./tsconfig.json",
+    "ws-tsc-check": "npm run tsc-check -ws"
+  },
+  "optionalDependencies": {
+    "react-app-alias": "file:./.nvmrc",
+    "react-app-alias-ex": "file:./.nvmrc"
   },
   "devDependencies": {
   }

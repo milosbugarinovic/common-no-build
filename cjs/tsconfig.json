@@ -1,0 +1,12 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "packages/node-core/tsconfig.build.json"
+		}
+	],
+	"watchOptions": {
+		"watchFile": "dynamicPriorityPolling",
+		"watchDirectory": "dynamicPriorityPolling"
+	}
+}

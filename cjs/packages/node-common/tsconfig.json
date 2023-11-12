@@ -13,11 +13,10 @@
 		"inlineSourceMap": true,
 		"inlineSources": true,
 		"lib": [
-			"dom",
 			"esnext"
 		],
 		"module": "CommonJS",
-		"moduleResolution": "NodeNext",
+		"moduleResolution": "node",
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
@@ -25,29 +24,33 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"outDir": "./dist",
+		"rootDir": "..",
 		"paths": {
-			"@test/node-common/*": [
-				"./node-common/*"
+			"#common": [
+				"./common/src"
 			],
-			"@test/common/*": [
-				"./common/*"
+			"#common/*": [
+				"./common/src/*"
+			],
+			"#node-common": [
+				"./node-common/src"
+			],
+			"#node-common/*": [
+				"./node-common/src/*"
 			]
 		},
 		"resolveJsonModule": true,
-		"rootDir": "..",
 		"skipLibCheck": true,
 		"strict": true,
 		"strictFunctionTypes": true,
 		"strictNullChecks": true,
 		"target": "ESNext"
 	},
-	"exclude": [
-		"./**/*.test.ts",
-		"./**/__mocks__/*",
-		"./**/__snapshots__/*"
-	],
 	"include": [
 		"./src",
 		"../common/src"
+	],
+	"references": [
+		{ "path": "../common/tsconfig.build.json" }
 	]
 }
