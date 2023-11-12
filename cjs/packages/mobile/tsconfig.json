@@ -10,16 +10,10 @@
       "#/*": [
         "./src/*"
       ],
-//      "@app": [
-//        "../src/app"
-//      ],
-//      "@app/*": [
-//        "../src/app/*"
-//      ],
-      "@test/common": [
+      "#common": [
         "../common/src"
       ],
-      "@test/common/*": [
+      "#common/*": [
         "../common/src/*"
       ]
     }

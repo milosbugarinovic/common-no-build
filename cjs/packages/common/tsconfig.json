@@ -26,10 +26,10 @@
 		"noUnusedParameters": true,
 		"outDir": "./dist",
 		"paths": {
-			"@test/common": [
+			"#common": [
 				"./common/src"
 			],
-			"@test/common/*": [
+			"#common/*": [
 				"./common/src/*"
 			]
 		},

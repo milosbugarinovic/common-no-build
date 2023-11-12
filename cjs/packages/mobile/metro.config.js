@@ -11,7 +11,7 @@ module.exports = {
   watchFolders: [projectRoot, commonRoot],
   resolver: {
     extraNodeModules: new Proxy({
-      '@test/common': commonRoot,
+      '#common': commonRoot,
     },
         {
           get: (target, name) => {

@@ -3,8 +3,8 @@ module.exports = {
 	preset: 'ts-jest',
 	testEnvironment: "node",
 	moduleNameMapper: {
-		'^@test/common$': ['<rootDir>/src/$1/index'],
-		'^@test/common/(.*)$': ['<rootDir>/src/$1','<rootDir>/src/$1/index'],
+		'^#common$': ['<rootDir>/src/$1/index'],
+		'^#common/(.*)$': ['<rootDir>/src/$1','<rootDir>/src/$1/index'],
 	},
 	roots: ['<rootDir>'],
 

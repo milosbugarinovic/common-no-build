@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native';
-import { Common } from '@test/common'
-import { CommonSomeService } from '@test/common/service/some-service'
+import { Common } from '#common'
+import { CommonSomeService } from '#common/service/some-service'
 
 
 export const AppInit = (): React.ReactElement => {
