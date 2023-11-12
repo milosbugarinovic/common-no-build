@@ -1,19 +1,19 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"#": [
-				"./src"
-			],
-			"#/*": [
-				"./src/*"
-			],
-			"#common": [
-				"../common/src"
-			],
-			"#common/*": [
-				"../common/src/*"
-			]
-		}
-	}
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#": [
+        "./src"
+      ],
+      "#/*": [
+        "./src/*"
+      ],
+      "#common": [
+        "../common/src"
+      ],
+      "#common/*": [
+        "../common/src/*"
+      ]
+    }
+  }
 }

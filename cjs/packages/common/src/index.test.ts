@@ -1,6 +1,6 @@
-import { Common } from '#common'
-import { CommonSomeService } from '#common/service/some-service'
-jest.mock('#common/service/some-service')
+import { Common } from '@test/common/src'
+import { CommonSomeService } from '@test/common/src/service/some-service'
+jest.mock('@test/common/src/service/some-service')
 // import { CommonSomeService } from './service/some-service'
 // jest.mock('./service/some-service')
 // import { CommonSomeService } from './service/some-service'

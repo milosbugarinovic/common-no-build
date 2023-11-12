@@ -2,7 +2,10 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/common",
+    "packages/node-common",
+    "packages/node-core",
+    "packages/react-core"
   ],
   "scripts": {
     "start": "npm run rw-start --workspace=react-core",

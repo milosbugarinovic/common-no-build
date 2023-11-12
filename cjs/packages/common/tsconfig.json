@@ -26,11 +26,11 @@
 		"noUnusedParameters": true,
 		"outDir": "./dist",
 		"paths": {
-			"#common": [
-				"./common/src"
+			"@test/common": [
+				"./common"
 			],
-			"#common/*": [
-				"./common/src/*"
+			"@test/common/*": [
+				"./common/*"
 			]
 		},
 		"resolveJsonModule": true,
