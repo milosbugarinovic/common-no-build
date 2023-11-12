@@ -5,7 +5,7 @@ import { CommonSomeService } from '#common/service/some-service'
 
 
 export const AppInit = (): React.ReactElement => {
-// const test= new Common()
+const test= new Common()
 const test2= new CommonSomeService()
 
  return <View>
@@ -13,7 +13,7 @@ const test2= new CommonSomeService()
     <Text>Test the app</Text>
     <Text>Test the app</Text>
     <Text>Test the app</Text>
-     {/*<Text>{test.someFunction()}</Text>*/}
+     <Text>{test.someFunction()}</Text>
      <Text>{test2.someServiceFunction()}</Text>
   </View>
 }
